@@ -1,0 +1,122 @@
+/**** Twitter Timeline base styles ****/
+
+body {
+  min-width: 768px;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center 40px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Input fields */
+/* ===================================== */
+.timeline-composer-input:focus {
+  outline: none;
+  border-color: #99CDE1 !important;
+}
+
+/* Top Navigation Bar */
+/* ===================================== */
+#twitter-logo-navbar {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: 17px;
+}
+
+/* Timeline */
+/* ===================================== */
+#timeline-container {
+  top: 60px;
+  width: 590px;
+  position: absolute;
+  left: 50%;
+  margin-left: -295px;
+  border-radius: 6px;
+}
+
+/* Individual Tweet */
+/* ===================================== */
+.tweet-item-parent:hover {
+  background-color: #f5f8fa !important;
+}
+
+.profile-link:hover {
+  text-decoration: none !important;
+}
+.tweet-content-user-header .profile-link:hover .user-fullname,
+.tweet-content-user-header .tweet-link:hover {
+  text-decoration: underline;
+}
+
+.tweet-content-user-header .profile-link:hover .user-screenname {
+  text-decoration: none !important;
+}
+
+.retweet-action.not-retweeted .retweet-count:hover,
+.favorite-action.not-favorited .favorite-count:hover  {
+  color: #666666 !important;
+}
+
+/* Images */
+/* ===================================== */
+.twitter-logo-20 {
+  background-image: url(/images/twitter_logo_20x16.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 16px;
+}
+
+.icon-reply {
+  background-image: url(/images/reply.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.icon-reply:hover {
+  background-image: url(/images/reply_hover.png);
+}
+
+.icon-retweet {
+  background-image: url(/images/retweet.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.retweet-action.not-retweeted:hover .icon-retweet {
+  background-image: url(/images/retweet_hover.png);
+}
+.icon-retweet-on {
+  background-image: url(/images/retweet_on.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-favorite {
+  background-image: url(/images/favorite.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.favorite-action.not-favorited:hover .icon-favorite {
+  background-image: url(/images/favorite_hover.png);
+}
+.icon-favorite-on {
+  background-image: url(/images/favorite_on.png);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+
+  .twitter-logo-20 {
+    background-image: url(/images/twitter_logo_20x16@2x.png);
+    background-size: 20px 16px;
+  }
+}
